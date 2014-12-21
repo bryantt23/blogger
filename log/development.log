@@ -333,3 +333,31 @@ ActionView::MissingTemplate (Missing template articles/index, application/index 
 
 
   Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (2.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-12-21 03:33:51 -0800
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 29863ms (Views: 29857.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-12-21 03:34:22 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-21 03:34:22 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-21 03:34:22 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-21 03:34:22 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-21 03:34:22 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-21 03:34:22 -0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-12-21 03:34:22 -0800
