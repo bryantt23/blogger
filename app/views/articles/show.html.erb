@@ -8,6 +8,15 @@
   <% end %>
 </p>
 
+
+<br>
+
+<% if @article.image.exists? %>
+    <%= image_tag @article.image.url %><br/>	<!-- Displays image only if exists (attached) -->
+<% end %>
+
+<br>
+
 <p><%= @article.body %></p>
 
 <h3>Comments (<%= @article.comments.size %>)</h3>
