@@ -3432,3 +3432,362 @@ ActionController::RoutingError (uninitialized constant CommentsController):
   Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.0ms)
   Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
   Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (318.0ms)
+
+
+Started POST "/articles/13/comments" for 127.0.0.1 at 2014-12-21 23:23:28 -0800
+
+AbstractController::ActionNotFound (The action 'create' could not be found for CommentsController):
+  actionpack (4.1.8) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (2.0ms)
+
+
+Started POST "/articles/13/comments" for 127.0.0.1 at 2014-12-21 23:23:37 -0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WBQzemzS2kXsBO9kE8DkK3dXpg/k3r+KbCjX4UVHJpQ=", "comment"=>{"author_name"=>"b", "body"=>"bbbbbbbbbbbbbbbbbbb"}, "commit"=>"Submit", "article_id"=>"13"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "comments" ("article_id", "author_name", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", 13], ["author_name", "b"], ["body", "bbbbbbbbbbbbbbbbbbb"], ["created_at", "2014-12-22 07:23:37.508947"], ["updated_at", "2014-12-22 07:23:37.508947"]]
+  [1m[35m (260.0ms)[0m  commit transaction
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+Redirected to http://localhost:3000/articles/13
+Completed 302 Found in 414ms (ActiveRecord: 269.0ms)
+
+
+Started GET "/articles/13" for 127.0.0.1 at 2014-12-21 23:23:37 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mArticle Load (1.0ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."article_id" = ?[0m  [["article_id", 13]]
+  Rendered articles/_comment.html.erb (2.0ms)
+  Rendered comments/_form.html.erb (8.0ms)
+  Rendered articles/show.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 2864ms (Views: 2853.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-12-21 23:23:41 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-12-21 23:23:41 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:41 -0800
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-12-21 23:23:41 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-21 23:23:41 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:41 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:41 -0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:41 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:41 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:41 -0800
+
+
+Started POST "/articles/13/comments" for 127.0.0.1 at 2014-12-21 23:23:50 -0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WBQzemzS2kXsBO9kE8DkK3dXpg/k3r+KbCjX4UVHJpQ=", "comment"=>{"author_name"=>"b", "body"=>"d"}, "commit"=>"Submit", "article_id"=>"13"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "comments" ("article_id", "author_name", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", 13], ["author_name", "b"], ["body", "d"], ["created_at", "2014-12-22 07:23:50.166671"], ["updated_at", "2014-12-22 07:23:50.166671"]]
+  [1m[35m (13.0ms)[0m  commit transaction
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+Redirected to http://localhost:3000/articles/13
+Completed 302 Found in 60ms (ActiveRecord: 19.0ms)
+
+
+Started GET "/articles/13" for 127.0.0.1 at 2014-12-21 23:23:50 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."article_id" = ?[0m  [["article_id", 13]]
+  Rendered articles/_comment.html.erb (0.0ms)
+  Rendered comments/_form.html.erb (5.0ms)
+  Rendered articles/show.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 286ms (Views: 279.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-12-21 23:23:50 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:50 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:50 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:50 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-21 23:23:50 -0800
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-12-21 23:23:50 -0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:50 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:51 -0800
+
+
+Started POST "/articles/13/comments" for 127.0.0.1 at 2014-12-21 23:23:57 -0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WBQzemzS2kXsBO9kE8DkK3dXpg/k3r+KbCjX4UVHJpQ=", "comment"=>{"author_name"=>"d", "body"=>"dddd"}, "commit"=>"Submit", "article_id"=>"13"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "comments" ("article_id", "author_name", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", 13], ["author_name", "d"], ["body", "dddd"], ["created_at", "2014-12-22 07:23:57.707102"], ["updated_at", "2014-12-22 07:23:57.707102"]]
+  [1m[35m (460.0ms)[0m  commit transaction
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+Redirected to http://localhost:3000/articles/13
+Completed 302 Found in 489ms (ActiveRecord: 462.0ms)
+
+
+Started GET "/articles/13" for 127.0.0.1 at 2014-12-21 23:23:58 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mArticle Load (1.0ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."article_id" = ?[0m  [["article_id", 13]]
+  Rendered articles/_comment.html.erb (1.0ms)
+  Rendered comments/_form.html.erb (5.0ms)
+  Rendered articles/show.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 250ms (Views: 243.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-12-21 23:23:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:58 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:58 -0800
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-12-21 23:23:59 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-21 23:23:59 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:59 -0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:59 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-21 23:23:59 -0800
+
+
+Started POST "/articles/13/comments" for 127.0.0.1 at 2014-12-21 23:24:05 -0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WBQzemzS2kXsBO9kE8DkK3dXpg/k3r+KbCjX4UVHJpQ=", "comment"=>{"author_name"=>"b", "body"=>"afdfadfa"}, "commit"=>"Submit", "article_id"=>"13"}
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "comments" ("article_id", "author_name", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", 13], ["author_name", "b"], ["body", "afdfadfa"], ["created_at", "2014-12-22 07:24:05.542550"], ["updated_at", "2014-12-22 07:24:05.542550"]]
+  [1m[35m (415.0ms)[0m  commit transaction
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+Redirected to http://localhost:3000/articles/13
+Completed 302 Found in 458ms (ActiveRecord: 421.0ms)
+
+
+Started GET "/articles/13" for 127.0.0.1 at 2014-12-21 23:24:06 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mArticle Load (1.0ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."article_id" = ?[0m  [["article_id", 13]]
+  Rendered articles/_comment.html.erb (1.0ms)
+  Rendered comments/_form.html.erb (5.0ms)
+  Rendered articles/show.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 267ms (Views: 255.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-12-21 23:24:06 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:07 -0800
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-12-21 23:24:07 -0800
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-12-21 23:24:07 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-21 23:24:07 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:07 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:07 -0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:07 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:07 -0800
+
+
+Started POST "/articles/13/comments" for 127.0.0.1 at 2014-12-21 23:24:17 -0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WBQzemzS2kXsBO9kE8DkK3dXpg/k3r+KbCjX4UVHJpQ=", "comment"=>{"author_name"=>"dadfdfad", "body"=>"dfafafadsfasf"}, "commit"=>"Submit", "article_id"=>"13"}
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "comments" ("article_id", "author_name", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", 13], ["author_name", "dadfdfad"], ["body", "dfafafadsfasf"], ["created_at", "2014-12-22 07:24:17.401228"], ["updated_at", "2014-12-22 07:24:17.401228"]]
+  [1m[35m (16.0ms)[0m  commit transaction
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+Redirected to http://localhost:3000/articles/13
+Completed 302 Found in 50ms (ActiveRecord: 21.0ms)
+
+
+Started GET "/articles/13" for 127.0.0.1 at 2014-12-21 23:24:17 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."article_id" = ?[0m  [["article_id", 13]]
+  Rendered articles/_comment.html.erb (1.0ms)
+  Rendered comments/_form.html.erb (4.0ms)
+  Rendered articles/show.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 274ms (Views: 267.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-12-21 23:24:18 -0800
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-12-21 23:24:18 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:18 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-12-21 23:24:18 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-21 23:24:18 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:18 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:18 -0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:18 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:18 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:18 -0800
+
+
+Started POST "/articles/13/comments" for 127.0.0.1 at 2014-12-21 23:24:37 -0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WBQzemzS2kXsBO9kE8DkK3dXpg/k3r+KbCjX4UVHJpQ=", "comment"=>{"author_name"=>"hdfsh", "body"=>"gdfhdgfhgf"}, "commit"=>"Submit", "article_id"=>"13"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "comments" ("article_id", "author_name", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", 13], ["author_name", "hdfsh"], ["body", "gdfhdgfhgf"], ["created_at", "2014-12-22 07:24:37.653387"], ["updated_at", "2014-12-22 07:24:37.653387"]]
+  [1m[35m (17.0ms)[0m  commit transaction
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+Redirected to http://localhost:3000/articles/13
+Completed 302 Found in 46ms (ActiveRecord: 22.0ms)
+
+
+Started GET "/articles/13" for 127.0.0.1 at 2014-12-21 23:24:37 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mArticle Load (1.0ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."article_id" = ?[0m  [["article_id", 13]]
+  Rendered articles/_comment.html.erb (1.0ms)
+  Rendered comments/_form.html.erb (4.0ms)
+  Rendered articles/show.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 273ms (Views: 265.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-12-21 23:24:38 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-21 23:24:38 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:38 -0800
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-12-21 23:24:38 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-12-21 23:24:38 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:38 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:38 -0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:38 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:38 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-21 23:24:38 -0800
